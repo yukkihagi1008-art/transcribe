@@ -1,0 +1,13 @@
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+*.egg-info/
+
+# チャンネル固有の言い間違い辞書（任意設定。テンプレは無し・空なら汎用ルールのみで動く）
+config/corrections.local.json
