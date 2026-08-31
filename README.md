@@ -12,6 +12,21 @@
 壁打ち（1問: 保存先フォルダ）が始まります。答え終わると自動でセットアップが作られ、
 `/transcribe` がすぐ使えるようになります。
 
+## 使い方（Claude Codeを使わない場合）
+
+Claude Codeが無くても、ドラッグ&ドロップだけで使えるアプリを用意しています。
+
+- **Mac**: [Code → Download ZIP](https://github.com/yukkihagi1008-art/transcribe/archive/refs/heads/main.zip)
+  で展開し、`app/mac/install.command` をダブルクリック。デスクトップに `Transcribe.app` が
+  でき、以後は音声/動画ファイルをそのアイコンにドラッグ&ドロップするだけ
+  （YouTube URLはダブルクリックして貼り付け）
+- **Windows**: 同様にZIPを展開し、`app/windows/install.ps1` を右クリック→PowerShellで実行。
+  デスクトップにできる `Transcribe` ショートカットにファイルをドラッグ&ドロップする
+  （※開発機がmacOSのため実機未検証。動かない場合はIssueで報告してほしい）
+
+初回だけ ffmpeg・Whisper・yt-dlp を自動インストールする（数分かかる）。詳しくは
+[app/README.md](app/README.md) を参照。
+
 ## 何をしてくれるか
 
 - `mlx-whisper`（Apple Silicon GPU）または `faster-whisper`（CPU）で音声を単一パス転写
